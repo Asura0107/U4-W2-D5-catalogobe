@@ -6,20 +6,31 @@ public class Riviste extends Catalogo {
         SETTIMANALE, MENSILE, SEMESTRALE
     };
 
-    public periodicità periodicità;
+    public static periodicità periodicità;
 
-    public Riviste(int codice, String title, int anno, int pagine, periodicità periodicità) {
-        super(codice, title, anno, pagine);
-        this.periodicità=periodicità;
+    public Riviste(int pagine, String title,  periodicità periodicità) {
+        super( title,pagine);
+        this.periodicità = periodicità;
     }
 
     @Override
-    public int getCodice() {
+    public String toString() {
+        return "Riviste{" +
+                "periodicità=" + periodicità +
+                ", Codice=" + getCodice() +
+                ", title='" + getTitle() + '\'' +
+                ", anno=" + getAnno() +
+                ", pagine=" + getPagine() +
+                '}';
+    }
+
+    @Override
+    public long getCodice() {
         return super.getCodice();
     }
 
     @Override
-    public void setCodice(int codice) {
+    public void setCodice(long codice) {
         super.setCodice(codice);
     }
 

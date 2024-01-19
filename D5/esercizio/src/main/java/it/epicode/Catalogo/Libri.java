@@ -1,13 +1,29 @@
 package it.epicode.Catalogo;
 
-public class Libri extends Catalogo{
-    public String autore;
-    public String genere;
+import java.util.Random;
 
-    public Libri(int codice, String title, int anno, int pagine, String autore, String genere) {
-        super(codice, title, anno, pagine);
+public class Libri extends Catalogo{
+    private String autore;
+    private String genere;
+
+    public Libri(  String title, int pagine, String autore, String genere) {
+        super(  title, pagine);
+        Random r=new Random();
         this.autore=autore;
         this.genere=genere;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Libri{" +
+                "autore='" + autore + '\'' +
+                ", genere='" + genere + '\'' +
+                ", Codice=" + getCodice() +
+                ", title='" + getTitle() + '\'' +
+                ", anno=" + getAnno() +
+                ", pagine=" + getPagine() +
+                '}';
     }
 
     public String getAutore() {
@@ -27,12 +43,12 @@ public class Libri extends Catalogo{
     }
 
     @Override
-    public int getCodice() {
+    public long getCodice() {
         return super.getCodice();
     }
 
     @Override
-    public void setCodice(int codice) {
+    public void setCodice(long codice) {
         super.setCodice(codice);
     }
 
