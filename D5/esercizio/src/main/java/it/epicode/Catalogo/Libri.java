@@ -13,6 +13,11 @@ public class Libri extends Catalogo{
         this.genere=genere;
     }
 
+    public Libri(long codice, String title, int anno, int pagine, String autore, String genere) {
+        super(codice, title, anno, pagine);
+        this.autore = autore;
+        this.genere = genere;
+    }
 
     @Override
     public String toString() {
@@ -30,16 +35,8 @@ public class Libri extends Catalogo{
         return autore;
     }
 
-    public void setAutore(String autore) {
-        this.autore = autore;
-    }
-
     public String getGenere() {
         return genere;
-    }
-
-    public void setGenere(String genere) {
-        this.genere = genere;
     }
 
     @Override
@@ -47,38 +44,23 @@ public class Libri extends Catalogo{
         return super.getCodice();
     }
 
-    @Override
-    public void setCodice(long codice) {
-        super.setCodice(codice);
-    }
 
     @Override
     public String getTitle() {
         return super.getTitle();
     }
 
-    @Override
-    public void setTitle(String title) {
-        super.setTitle(title);
-    }
 
     @Override
     public int getAnno() {
         return super.getAnno();
     }
 
-    @Override
-    public void setAnno(int anno) {
-        super.setAnno(anno);
-    }
 
     @Override
     public int getPagine() {
         return super.getPagine();
     }
 
-    @Override
-    public void setPagine(int pagine) {
-        super.setPagine(pagine);
-    }
+
 }

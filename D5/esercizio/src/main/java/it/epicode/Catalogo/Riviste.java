@@ -13,6 +13,12 @@ public class Riviste extends Catalogo {
         this.periodicità = periodicità;
     }
 
+    public Riviste(long codice, String title, int anno, int pagine, periodicità periodicità) {
+        super(codice, title, anno, pagine);
+        this.periodicità = periodicità;
+
+    }
+
     @Override
     public String toString() {
         return "Riviste{" +
@@ -64,11 +70,5 @@ public class Riviste extends Catalogo {
         super.setPagine(pagine);
     }
 
-    public Riviste.periodicità getPeriodicità() {
-        return periodicità;
-    }
 
-    public void setPeriodicità(Riviste.periodicità periodicità) {
-        this.periodicità = periodicità;
-    }
 }
