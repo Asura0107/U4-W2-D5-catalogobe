@@ -117,6 +117,7 @@ public class Utils {
     public static void save(List<Catalogo> catalogo)  {
         File file = new File("src/archivio.txt");
         try (FileWriter fw = new FileWriter(file)) {
+            //mettendo il fw tra le tonde voglio dire che non serve un close() per chiudere il fw dato che finirà quando finisce il try
             for (Catalogo elemento : catalogo) {
                 fw.write(elemento.toString() + "\n");
             }

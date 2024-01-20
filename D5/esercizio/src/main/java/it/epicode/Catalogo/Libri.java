@@ -8,7 +8,6 @@ public class Libri extends Catalogo{
 
     public Libri(  String title, int pagine, String autore, String genere) {
         super(  title, pagine);
-        Random r=new Random();
         this.autore=autore;
         this.genere=genere;
     }
