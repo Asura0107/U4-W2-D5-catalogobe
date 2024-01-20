@@ -35,9 +35,6 @@ public class Libri extends Catalogo{
         return autore;
     }
 
-    public String getGenere() {
-        return genere;
-    }
 
     @Override
     public long getCodice() {

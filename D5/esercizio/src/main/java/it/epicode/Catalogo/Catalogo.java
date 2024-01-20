@@ -37,31 +37,19 @@ public abstract class  Catalogo {
         return Codice;
     }
 
-    public void setCodice(long codice) {
-        Codice = codice;
-    }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
 
     public int getAnno() {
         return anno;
     }
 
-    public void setAnno(int anno) {
-        this.anno = anno;
-    }
 
     public int getPagine() {
         return pagine;
     }
 
-    public void setPagine(int pagine) {
-        this.pagine = pagine;
-    }
 }

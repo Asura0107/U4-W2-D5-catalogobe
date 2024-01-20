@@ -35,40 +35,26 @@ public class Riviste extends Catalogo {
         return super.getCodice();
     }
 
-    @Override
-    public void setCodice(long codice) {
-        super.setCodice(codice);
-    }
 
     @Override
     public String getTitle() {
         return super.getTitle();
     }
 
-    @Override
-    public void setTitle(String title) {
-        super.setTitle(title);
-    }
 
     @Override
     public int getAnno() {
         return super.getAnno();
     }
 
-    @Override
-    public void setAnno(int anno) {
-        super.setAnno(anno);
-    }
+
 
     @Override
     public int getPagine() {
         return super.getPagine();
     }
 
-    @Override
-    public void setPagine(int pagine) {
-        super.setPagine(pagine);
-    }
+
 
 
 }

@@ -1,0 +1,7 @@
+Libri{autore='Future Trunks', genere='Historical fiction', Codice=6323486537377980255, title='The Painted Veil', anno=2011, pagine=276}
+Riviste{periodicità=SETTIMANALE, Codice=8456088893271887557, title='Terrible Swift Sword', anno=2017, pagine=39}
+Libri{autore='Bardock', genere='Fiction narrative', Codice=1769169767051317206, title='The Yellow Meads of Asphodel', anno=2013, pagine=334}
+Riviste{periodicità=SETTIMANALE, Codice=5588844324850491124, title='Beyond the Mexique Bay', anno=2018, pagine=42}
+Libri{autore='Arthur Conan Doyle', genere='mistero', Codice=7, title='Gli uomini danzanti', anno=2001, pagine=350}
+Libri{autore='Pittacus Lore', genere='fantasy', Codice=8, title='Sono il numero 4', anno=2001, pagine=350}
+Riviste{periodicità=SETTIMANALE, Codice=6, title='Magazine', anno=2020, pagine=30}
